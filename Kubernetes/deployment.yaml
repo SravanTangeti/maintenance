@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-deployment
+  name: maintainence-deployment
   namespace: react-microk8s
   labels:
-    app: react-demo
+    app: maintainence-demo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: react-demo
+      app: maintainence-demo
   template:
     metadata:
       labels:
-        app: react-demo
+        app: maintainence-demo
     spec:
       containers:
-      - name: react-demo
-        image: sagarkakkalasworld/react-microk8s:latest
+      - name: maintainence-page
+        image: sagarkakkalasworld/maintanence-page:latest
         ports:
         - containerPort: 80
