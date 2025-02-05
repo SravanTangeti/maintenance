@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: maintainence-page
-        image: sagarkakkalasworld/maintanence-page:latest
+        image: sra1tangeti/maintanence-page:latest
         ports:
         - containerPort: 80
